@@ -230,7 +230,7 @@ public class HomeScreenBitmap extends ImageView implements View.OnTouchListener 
                 y=270*ry;
                 this.setVisibility(View.VISIBLE);
                 final Bitmap currentBitmap;
-                currentBitmap= BitmapFactory.decodeResource(getResources(), R.drawable.darkviolinbutton);
+                currentBitmap= BitmapFactory.decodeResource(getResources(), R.drawable.darkdrumbutton);
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);

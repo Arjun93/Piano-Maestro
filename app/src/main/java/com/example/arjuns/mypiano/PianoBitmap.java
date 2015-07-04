@@ -52,8 +52,31 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
         bundle=new Bundle();
         bundle.putInt("apple", instrumentID);
         if(instrumentID == 10){
-
-            
+            soundId[0] = mySoundPool.load(getContext(), R.raw.dance_clap, 1);
+            soundId[1] = mySoundPool.load(getContext(), R.raw.dance_crash, 1);
+            soundId[2] = mySoundPool.load(getContext(), R.raw.dance_hihat, 1);
+            soundId[3] = mySoundPool.load(getContext(), R.raw.dance_ride, 1);
+            soundId[4] = mySoundPool.load(getContext(), R.raw.dance_snare, 1);
+            soundId[5] = mySoundPool.load(getContext(), R.raw.dance_tom1, 1);
+            soundId[6] = mySoundPool.load(getContext(), R.raw.dance_tom2, 1);
+            soundId[7] = mySoundPool.load(getContext(), R.raw.dance_tom3, 1);
+            soundId[8] = mySoundPool.load(getContext(), R.raw.dancekick, 1);
+            soundId[9] = mySoundPool.load(getContext(), R.raw.elec_crash1, 1);
+            soundId[10] = mySoundPool.load(getContext(), R.raw.elec_crash2, 1);
+            soundId[11] = mySoundPool.load(getContext(), R.raw.elec_hihatdown, 1);
+            soundId[12] = mySoundPool.load(getContext(), R.raw.elec_kick, 1);
+            soundId[13] = mySoundPool.load(getContext(), R.raw.elec_ride1, 1);
+            soundId[14] = mySoundPool.load(getContext(), R.raw.elec_ride2, 1);
+            soundId[15] = mySoundPool.load(getContext(), R.raw.dance_snare, 1);
+            soundId[16] = mySoundPool.load(getContext(), R.raw.elec_tom1, 1);
+            soundId[17] = mySoundPool.load(getContext(), R.raw.elec_tom2, 1);
+            soundId[18] = mySoundPool.load(getContext(), R.raw.elec_tom3, 1);
+            soundId[19] = mySoundPool.load(getContext(), R.raw.funk_crash, 1);
+            soundId[20] = mySoundPool.load(getContext(), R.raw.funk_crash2, 1);
+            soundId[21] = mySoundPool.load(getContext(), R.raw.funk_crash3, 1);
+            soundId[22] = mySoundPool.load(getContext(), R.raw.funk_tom1, 1);
+            soundId[23] = mySoundPool.load(getContext(), R.raw.funk_tom2, 1);
+            soundId[24] = mySoundPool.load(getContext(), R.raw.funk_tom3, 1);
         }
         if(instrumentID == 8){
             soundId[0] = mySoundPool.load(getContext(), R.raw.m1, 1);
@@ -354,7 +377,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
-
+                mySoundPool.play(soundId[0], volume, volume, 1, 0 , 1f);
             }
             //black1
             if(x>34*rx&&x<57*rx&&y>169*ry&&y<367*ry)
@@ -367,6 +390,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[1], volume, volume, 1, 0 , 1f);
             }
             //white2
             if((x>60*rx&&x<105*rx&&y>367*ry&&y<475*ry)||(x>72*rx&&x<102*rx&&y>169*ry&&y<367*ry))
@@ -379,6 +403,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[2], volume, volume, 1, 0 , 1f);
             }
             //black2
             if(x>100*rx&&x<139*rx&&y>169*ry&&y<367*ry)
@@ -391,6 +416,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[3], volume, volume, 1, 0 , 1f);
             }
             //white3
             if((x>115*rx&&x<171*rx&&y>367*ry&&y<475*ry)||(x>141*rx&&x<171*rx&&y>169*ry&&y<367*ry))
@@ -403,6 +429,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[4], volume, volume, 1, 0 , 1f);
             }
             //white4//174,227
             if((x>174*rx&&x<227*rx&&y>367*ry&&y<475*ry)||(x>174*rx&&x<202*rx&&y>169*ry&&y<367*ry))
@@ -415,6 +442,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[5], volume, volume, 1, 0 , 1f);
             }
             //black 3
             if(x>202*rx&&x<rx*240&&y>169*ry&&y<367*ry)
@@ -427,6 +455,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[6], volume, volume, 1, 0 , 1f);
             }
             //white5
             if((x>rx*232&&x<rx*285&&y>ry*367&&y<ry*475)||(x>239*rx&&x<rx*267&&y>169*ry&&y<367*ry))
@@ -439,6 +468,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[7], volume, volume, 1, 0 , 1f);
             }
             //black4
             if(x>rx*267&&x<rx*305&&y>169*ry&&y<367*ry)
@@ -450,6 +480,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[8], volume, volume, 1, 0 , 1f);
             }
             //white6
             if((x>289*rx&&x<rx*342&&y>ry*367&&y<ry*475)||(x>305*rx&&x<rx*331&&y>169*ry&&y<367*ry))
@@ -462,6 +493,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[9], volume, volume, 1, 0 , 1f);
             }
             //black 5
             if(x>rx*333&&x<rx*370&&y>169*ry&&y<367*ry)
@@ -474,6 +506,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[10], volume, volume, 1, 0, 1f);
             }
             //white7
             if((x>rx*346&&x<rx*400&&y>ry*367&&y<ry*475)||(x>rx*370&&x<rx*400&&y>169*ry&&y<367*ry))
@@ -486,6 +519,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[11], volume, volume, 1, 0 , 1f);
             }
             //white8
             if((x>rx*401&&x<rx*456&&y>ry*367&&y<ry*475)||(x>rx*401&&x<431*rx&&y>169*ry&&y<367*ry))
@@ -498,6 +532,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[12], volume, volume, 1, 0 , 1f);
             }
             //black6
             if(x>rx*433&&x<469*rx&&y>ry*169&&y<ry*367)
@@ -510,6 +545,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[13], volume, volume, 1, 0 , 1f);
             }
             //white9
             if((x>rx*458&&x<rx*514&&y>ry*367&&y<ry*475)||(x>rx*471&&x<rx*500&&y>ry*169&&y<ry*367))
@@ -522,6 +558,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[14], volume, volume, 1, 0 , 1f);
             }
             //black7
             if(x>rx*501&&x<rx*537&&y>ry*169&&y<ry*367)
@@ -534,6 +571,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[15], volume, volume, 1, 0 , 1f);
             }
             //white10
             if((x>rx*517&&x<rx*570&&y>ry*367&&y<ry*475)||(x>rx*536&&x<rx*570&&y>ry*169&&y<ry*367))
@@ -546,6 +584,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[16], volume, volume, 1, 0 , 1f);
             }
             //white11
             if((x>571*rx&&x<rx*626&&y>ry*367&&y<ry*475)||(x>571*rx&&x<rx*599&&y>ry*169&&y<ry*367))
@@ -558,6 +597,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[17], volume, volume, 1, 0 , 1f);
             }
             //black8
             if(x>rx*601&&x<rx*637&&y>ry*169&&y<ry*367)
@@ -570,6 +610,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[18], volume, volume, 1, 0 , 1f);
             }
             //white12
             if((x>629*rx&&x<rx*682&&y>ry*367&&y<ry*475)||(x>rx*637&&x<662*rx&&y>ry*169&&y<ry*367))
@@ -582,6 +623,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[19], volume, volume, 1, 0 , 1f);
             }
             //black9
             if(x>rx*665&&x<rx*701&&y>ry*169&&y<ry*367)
@@ -594,6 +636,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[20], volume, volume, 1, 0, 1f);
             }
             //white13
             if((x>rx*684&&x<rx*739&&y>ry*169&&y<ry*475)||(x>rx*701&&x<rx*730&&y>ry*169&&y<ry*367))
@@ -606,6 +649,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[21], volume, volume, 1, 0 , 1f);
             }
             //black2
             if(x>rx*728&&x<rx*766&&y>ry*169&&y<ry*367)
@@ -618,6 +662,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[22], volume, volume, 1, 0 , 1f);
             }
             //white14
             if((x>rx*741&&x<795*rx&&y>ry*367&&y<ry*475)||(x>766*rx&&x<rx*794&&y>ry*169&&y<ry*367))
@@ -630,6 +675,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[23], volume, volume, 1, 0 , 1f);
             }
             //white15FINALLY@$#FDSGEE
             if(x>796*rx&&y>169*ry)
@@ -642,6 +688,7 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                 Bitmap scaledBitmap=resizeImage(currentBitmap);
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
+                mySoundPool.play(soundId[24], volume, volume, 1, 0 , 1f);
             }
             /*myHandler.postDelayed(new Runnable() {
 
