@@ -35,7 +35,6 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
     private final int FRAME_RATE = 30;
     private int touched = 0;
     Bundle bundle ;
-    Bundle bundle3=new Bundle();
     int instrumentID=((Activity) getContext()).getIntent().getExtras().getInt("i");
     
     AudioManager audioManager = (AudioManager) getContext().getSystemService(Context.AUDIO_SERVICE);
