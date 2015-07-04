@@ -84,11 +84,10 @@ public class HomeScreenBitmap extends ImageView implements View.OnTouchListener 
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
                 myBundle.putInt("i", i);
-                myBundle.putInt("modeselection", 100);
-                /*pianoIntent = (Intent) new Intent(getContext(),Piano.class);
+                pianoIntent = (Intent) new Intent(getContext(),Piano.class);
                 pianoIntent.putExtras(myBundle);
                 pianoIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                getContext().startActivity(pianoIntent);*/
+                getContext().startActivity(pianoIntent);
             }
             else if(x>185*rx&&x<338*rx&&y>12*ry&&y<165*ry){
                 i=2;
@@ -101,11 +100,10 @@ public class HomeScreenBitmap extends ImageView implements View.OnTouchListener 
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
                 myBundle.putInt("i", i);
-                myBundle.putInt("modeselection", 100);
-                /*pianoIntent = (Intent) new Intent(getContext(),Piano.class);
+                pianoIntent = (Intent) new Intent(getContext(),Piano.class);
                 pianoIntent.putExtras(myBundle);
                 pianoIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                getContext().startActivity(pianoIntent);*/
+                getContext().startActivity(pianoIntent);
             }
             else if(x>352*rx&&x<507*rx&&y>12*ry&&y<165*ry){
                 i=3;
@@ -118,12 +116,10 @@ public class HomeScreenBitmap extends ImageView implements View.OnTouchListener 
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
                 myBundle.putInt("i", i);
-                myBundle.putInt("modeselection", 100);
-                /*pianoIntent = (Intent) new Intent(getContext(),Piano.class);
+                pianoIntent = (Intent) new Intent(getContext(),Piano.class);
                 pianoIntent.putExtras(myBundle);
                 pianoIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 getContext().startActivity(pianoIntent);
-*/
             }
             else if(x>526*rx&&x<680*rx&&y>12*ry&&y<165*ry){
                 i=4;
@@ -136,11 +132,10 @@ public class HomeScreenBitmap extends ImageView implements View.OnTouchListener 
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
                 myBundle.putInt("i", i);
-                myBundle.putInt("modeselection", 100);
-                /*pianoIntent = (Intent) new Intent(getContext(),Piano.class);
+                pianoIntent = (Intent) new Intent(getContext(),Piano.class);
                 pianoIntent.putExtras(myBundle);
                 pianoIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                getContext().startActivity(pianoIntent);*/
+                getContext().startActivity(pianoIntent);
             }
             else if(x>692*rx&&x<848*rx&&y>12*ry&&y<165*ry){
                 i=5;
@@ -153,11 +148,10 @@ public class HomeScreenBitmap extends ImageView implements View.OnTouchListener 
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
                 myBundle.putInt("i", i);
-                myBundle.putInt("modeselection", 100);
-                /*pianoIntent = (Intent) new Intent(getContext(),Piano.class);
+                pianoIntent = (Intent) new Intent(getContext(),Piano.class);
                 pianoIntent.putExtras(myBundle);
                 pianoIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                getContext().startActivity(pianoIntent);*/
+                getContext().startActivity(pianoIntent);
             }
 
             else if(x>12*rx&&x<169*rx&&y>191*ry&&y<349*ry)
@@ -172,12 +166,10 @@ public class HomeScreenBitmap extends ImageView implements View.OnTouchListener 
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
                 myBundle.putInt("i", i);
-                myBundle.putInt("modeselection", 100);
-                /*pianoIntent = (Intent) new Intent(getContext(),Piano.class);
+                pianoIntent = (Intent) new Intent(getContext(),Piano.class);
                 pianoIntent.putExtras(myBundle);
                 pianoIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 getContext().startActivity(pianoIntent);
-*/
             }
             else if(x>185*rx&&x<338*rx&&y>191*ry&&y<349*ry)
             {
@@ -192,12 +184,11 @@ public class HomeScreenBitmap extends ImageView implements View.OnTouchListener 
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
                 myBundle.putInt("i", i);
-                myBundle.putInt("modeselection", 100);
-                /*pianoIntent = (Intent) new Intent(getContext(),Piano.class);
+                pianoIntent = (Intent) new Intent(getContext(),Piano.class);
                 pianoIntent.putExtras(myBundle);
                 pianoIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 getContext().startActivity(pianoIntent);
-            */}
+            }
             else if(x>352*rx&&x<507*rx&&y>191*ry&&y<349*ry){
                 i=8;
                 x=431*rx;
@@ -209,12 +200,11 @@ public class HomeScreenBitmap extends ImageView implements View.OnTouchListener 
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
                 myBundle.putInt("i", i);
-                myBundle.putInt("modeselection", 100);
-                /*pianoIntent = (Intent) new Intent(getContext(),Piano.class);
+                pianoIntent = (Intent) new Intent(getContext(),Piano.class);
                 pianoIntent.putExtras(myBundle);
                 pianoIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 getContext().startActivity(pianoIntent);
-            */}
+            }
 
             else if(x>526*rx&&x<680*rx&&y>191*ry&&y<349*ry)
             {
@@ -228,12 +218,10 @@ public class HomeScreenBitmap extends ImageView implements View.OnTouchListener 
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
                 myBundle.putInt("i", i);
-                myBundle.putInt("modeselection", 100);
-               /* pianoIntent = (Intent) new Intent(getContext(),Piano.class);
+                pianoIntent = (Intent) new Intent(getContext(),Piano.class);
                 pianoIntent.putExtras(myBundle);
                 pianoIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                getContext().startActivity(pianoIntent);*/
-
+                getContext().startActivity(pianoIntent);
             }
             else if(x>692*rx&&x<848*rx&&y>191*ry&y<349*ry)
             {
@@ -247,11 +235,10 @@ public class HomeScreenBitmap extends ImageView implements View.OnTouchListener 
                 myCanvas.drawBitmap(scaledBitmap, x - scaledBitmap.getWidth()
                         / 2, y - scaledBitmap.getHeight() / 2, null);
                 myBundle.putInt("i", i);
-                myBundle.putInt("modeselection", 100);
-                /*pianoIntent = (Intent) new Intent(getContext(),Piano.class);
+                pianoIntent = (Intent) new Intent(getContext(),Piano.class);
                 pianoIntent.putExtras(myBundle);
                 pianoIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                getContext().startActivity(pianoIntent);*/
+                getContext().startActivity(pianoIntent);
             }
             touched=0;
             }
