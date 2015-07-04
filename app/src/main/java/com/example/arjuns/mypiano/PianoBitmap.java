@@ -690,6 +690,12 @@ public class PianoBitmap extends ImageView implements View.OnTouchListener {
                         / 2, y - scaledBitmap.getHeight() / 2, null);
                 mySoundPool.play(soundId[24], volume, volume, 1, 0 , 1f);
             }
+            //back button or home screen button
+            if(x>25*rx&&x<80*rx&&y>10*ry&&y<50*ry){
+                Intent homeScreenIntent = new Intent(getContext().getApplicationContext(),HomeScreen.class);
+                homeScreenIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                getContext().getApplicationContext().startActivity(homeScreenIntent);
+            }
             /*myHandler.postDelayed(new Runnable() {
 
 
